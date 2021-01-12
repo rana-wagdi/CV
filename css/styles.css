@@ -1,11 +1,38 @@
 *{
-    padding: 0;
+    font-family: 'Questrial', sans-serif;
     margin: 0;
+    padding: 0;
+}
+#home{
+    background: linear-gradient(0deg,rgba(13, 218, 166, 0.4),rgba(66, 135, 245));;
+    height: 35rem;
+    position: relative;
+    width: 100%;
+}
+.content {
+    color:#fff;
+    letter-spacing: .2rem;
+    padding: 13rem 0;
+    z-index: 1;
+}
+.content h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+.content hr{
+    border-top:.1px;
+    width:50%
 }
 .header{
     background: url("cover.jpg")  no-repeat fixed;
     background-size: cover;
-    height: 30rem;
-    background-color: ;
-    
+    height: 35rem;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    width: 100%;
+    z-index: -1;
 }
+
+
