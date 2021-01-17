@@ -8,35 +8,75 @@ body{
 }
 #home{
     background: linear-gradient(0deg,rgba(13, 218, 166, 0.4),rgba(66, 135, 245));;
-    height: 35rem;
+    height: 100vh;
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 .content {
     color:#fff;
     letter-spacing: .2rem;
     padding: 13rem 0;
     z-index: 1;
+
 }
 .content h1{
-
     margin-bottom: 1rem;
     font-size: 3rem;
+
 }
 .content hr{
     border-top:.1px;
-    width:50%
+    width:50%;
+
+}
+.content p{
+    font-size: 1.4rem;
+    margin: 1rem;
+    font-weight: 100px;
 }
 .header{
     background: url("cover.jpg")  no-repeat fixed;
     background-size: cover;
-    height: 35rem;
+    height: 100vh;
     left: 0;
     object-fit: cover;
     position: absolute;
     top:0;
+    text-align: center;
     width: 100%;
     z-index: -1;
+    overflow: hidden;
+}
+.box{
+    text-align: center;
+}
+.box .eye{
+
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    background: #fff;
+    margin: 0px 10px;
+    border-radius: 50%;
+    box-shadow: 0 5px 45px rgba(0,0, 0, 2),
+                inset 0 0 15px #42A5F5,
+                inset 0 0 25px #42A5F5;
+
+}
+.box .eye::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: #000;
+    top: 50%;
+    left: 35%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border:10px solid  #42A5F5;
+    box-sizing: border-box;
 }
 
 
