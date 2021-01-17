@@ -16,7 +16,7 @@ body{
 .content {
     color:#fff;
     letter-spacing: .2rem;
-    padding: 13rem 0;
+    padding: 5rem 0;
     z-index: 1;
 
 }
@@ -31,9 +31,9 @@ body{
 
 }
 .content p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin: 1rem;
-    font-weight: 100px;
+    font-weight: 100;
 }
 .header{
     background: url("cover.jpg")  no-repeat fixed;
@@ -50,19 +50,20 @@ body{
 }
 .box{
     text-align: center;
+    margin: 2rem 0;
 }
 .box .eye{
 
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 3rem;
+    height: 3rem;
     display: inline-block;
     background: #fff;
     margin: 0px 10px;
     border-radius: 50%;
-    box-shadow: 0 5px 45px rgba(0,0, 0, 2),
-                inset 0 0 15px #42A5F5,
-                inset 0 0 25px #42A5F5;
+    box-shadow: 0 2px 25px rgba(0,0, 0, 2),
+                inset 0 0 10px #42A5F5,
+                inset 0 0 15px #42A5F5;
 
 }
 .box .eye::before{
@@ -72,10 +73,10 @@ body{
     background-color: #000;
     top: 50%;
     left: 35%;
-    width: 35px;
-    height: 35px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
-    border:10px solid  #42A5F5;
+    border:5px solid  #42A5F5;
     box-sizing: border-box;
 }
 
