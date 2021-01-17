@@ -1,7 +1,10 @@
 *{
-    font-family: 'Questrial', sans-serif;
+    
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: 'Questrial', sans-serif;
 }
 #home{
     background: linear-gradient(0deg,rgba(13, 218, 166, 0.4),rgba(66, 135, 245));;
@@ -16,6 +19,7 @@
     z-index: 1;
 }
 .content h1{
+
     margin-bottom: 1rem;
     font-size: 3rem;
 }
