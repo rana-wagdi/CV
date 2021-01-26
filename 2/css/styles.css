@@ -132,10 +132,34 @@ nav .navbarLink{
 nav li:hover{
     background-color: #e6dcb8;
 }
+
+/* profile */
 #profile{
     margin: 5% 2%;
     text-align: center;
     height: 100vh;
     background-color: #fff;
     border-radius:10px;
+}
+.profile-box{
+    padding:2% 11%;
+}
+#profile h1{
+    letter-spacing: 1px;
+    font-size: 3.5rem;
+    font-family: 'Open Sans', sans-serif;
+    margin: 1rem auto;
+}
+.paragraph{
+    font-size: 1.1rem;
+   
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+}
+#profile hr{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+#profile h3{
+    float: left;
 }
