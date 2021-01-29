@@ -20,9 +20,7 @@
     <hr>
     <p>Interactive resume</p>
     <img src="css/images/cover.svg" alt="">
-    <div class="angle">
-    <span><i class="fas fa-angle-down fa-3x "></i></span>
-</div>
+
     </section>
 
 
@@ -31,15 +29,23 @@
     <!-----------------Navigation Bar start----------------------->
 
 
-<nav>
-    <ul class="navbarItem">
-        <li><a href="#profile" class="navbarLink">profile </a></li>
-        <li><a href="#experiences" class="navbarLink">experiences </a></li>
-        <li><a href="#abilities" class="navbarLink">abilities </a></li>
-        <li><a href="#projects" class="navbarLink">projects </a></li>
-        <li><a href="#contact" class="navbarLink">contact </a></li>
+<nav >
+    <div class="toogle">
+        <a href="#toggle-button" class="toggle-button">
+            <i class="fas fa-bars bar"></i>
+            
+        </a>
+        </div>
+        <div class="navLink">
+    <ul class="navbarList">
+        <li class="navbarItem"><a href="#profile" class="navbarLink active">profile </a></li>
+        <li class="navbarItem"><a href="#experiences" class="navbarLink">experiences </a></li>
+        <li class="navbarItem"><a href="#abilities" class="navbarLink">abilities </a></li>
+        <li class="navbarItem"><a href="#projects" class="navbarLink">projects </a></li>
+        <li class="navbarItem"><a href="#contact" class="navbarLink">contact </a></li>
 
     </ul>
+    </div>
 </nav>
 
 
@@ -49,21 +55,30 @@
     <!-----------------section profile start----------------------->
 
 
-<section id="profile" class="container">
+<section id="profile" class="container-fluid">
     <div class="profile-box">
     <h1>Profile</h1>
     <p class="paragraph">I'm a front-end web developer</p>
     <hr>
     
     <div class="row column-box">
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-12 about-me">
             <h3>About me</h3>
+            <p class="content">I am a front end web developer I have changed my career lately to this career. 
+                I have the training and take courses from Udacity and Udemy and make projects to change my career.
+                  I love structure and order and I also stand for quality. I love spending time on fixing little details.</p>
         </div>
-         <div class="col-md-4">
-            <img src="css/images/Rana-pic.png" alt="" style="width: 200px; height: 200px;">
+         <div class="col-lg-4 col-md-12">
+            <img class="rana-img" src="css/images/Rana-pic.png" alt="" style="width: 250px; height: 250px;">
         </div>
-         <div class="col-md-4">
-            <p>oklkkl</p>
+         <div class="col-lg-4 col-md-12 details" >
+             <h3>Details</h3>
+            <h5>Name:</h5>
+            <p>Rana Wagdi Mohamed</p>
+             <h5>Age:</h5>
+            <p>23 years</p>
+             <h5>Location:</h5>
+            <p>Giza,Egypt</p>
         </div>
     </div>
 </section>
@@ -90,6 +105,7 @@
        });
    }
 </script>
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
