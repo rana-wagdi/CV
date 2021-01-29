@@ -203,7 +203,7 @@ nav li:hover{
     margin:0 1rem 2rem 1rem;
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem 0 ;
+    padding: 3rem 0 0 ;
     border-radius: 0;
     z-index: 99;
       transition: all 1s;
@@ -212,17 +212,21 @@ nav li:hover{
     text-align: center !important;
      align-items: center !important;
     margin: 0px;
-    padding:.5rem 1rem;
+    padding:0rem 0rem;
     width: 100%;
     flex-direction: column;
     display: flex;
-     transition: all 1s;
+     
 }
 .navbarItem{
     list-style: none;
     text-align: center;
     align-items: center;
-     transition: all 1s;
+    padding: 0  8px;
+}
+.navbarItem:hover{
+    background-color: #e6dcb8;
+    width: 100%;
 }
 .navLink{
     display: none;
@@ -232,15 +236,18 @@ nav li:hover{
         color: white;
         display: block;
         font-size: 20px;
-        padding: .5rem 1rem;
         text-align: center;
+        padding: .5rem 1rem;
+}
+.navbarLink:hover{
+    color: #000;
 }
 .toogle{
     display: flex;
 }
 .toggle-button{
     position: absolute;
-    top: 1rem;
+    top: .5rem;
     right: 1rem;;
     flex-direction: column;
     justify-content: space-between;
@@ -261,7 +268,7 @@ nav li:hover{
 }
 .navLink.active{
         display: flex;
-         transition: all 1s;
+          transition: all 1s ease-out;
     }
     .navbarLink.active{
     color: #c4c2c3;
@@ -270,4 +277,22 @@ nav li:hover{
   .navbarItem{
         text-align: center;
     }
+
+
+
+.about-me h3{
+    text-align: center !important;
+}
+.content{
+    text-align: center !important;
+    width: 100%;
+}
+.details{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.details h3{
+    margin-top: 2rem;
+    text-align: center !important;
+}
 }
