@@ -107,7 +107,7 @@ nav{
     color: white;
     font-size: 1.2rem;
     border-radius: 1rem;
-    padding: .5rem;
+    
     
     
 }
@@ -124,19 +124,28 @@ nav .navbarList {
 }
 nav ul li{
     margin: auto;
-    padding: 20px 4px;
+   
     text-transform: capitalize;
+    width: 100%;
 }
 nav .navbarLink{
     text-decoration: none;
     color: #fff;
     display: block;
+    padding: 20px 4px;
+    cursor: pointer;
 }
-nav li:hover{
-    background-color: #e6dcb8;
+nav li :{
+    
 }
 .toogle{
     display: none;
+}
+.navbarLink.active{
+    background-color: #e6dcb8;
+    border-bottom: 2px solid  #fff;
+    color: black;
+    font-weight: 600;
 }
 /* profile */
 #profile{
@@ -184,6 +193,7 @@ nav li:hover{
 }
 .details{
     text-align: left ;
+    padding: 0 2rem;
 }
 .details h5{
     margin: 1rem auto 0;
@@ -200,7 +210,7 @@ nav li:hover{
     width: 100%;
     top: 0;
     right: 0;
-    margin:0 1rem 2rem 1rem;
+    margin:0 0rem 2rem 0rem;
     flex-direction: column;
     align-items: flex-start;
     padding: 3rem 0 0 ;
@@ -270,10 +280,7 @@ nav li:hover{
         display: flex;
           transition: all 1s ease-out;
     }
-    .navbarLink.active{
-    color: #c4c2c3;
-    border-bottom: 2px solid;
-}
+
   .navbarItem{
         text-align: center;
     }
