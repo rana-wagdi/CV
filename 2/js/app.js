@@ -1,8 +1,22 @@
 
+document.querySelector('body').addEventListener('mousemove',eyeball);
+   function eyeball(){
+       const eye = document.querySelectorAll('.eye');
+       eye.forEach(function(eye) {
+           let x =(eye.getBoundingClientRect().left)+ (eye.clientWidth/2);
+           let y =(eye.getBoundingClientRect().top)+ (eye.clientHeight/2);
+
+           let radian = Math.atan2(event.pageX-x, event.pageY - y);
+           let rotation=(radian * (180/Math.PI)* -1)+270;
+           eye.style.transform="rotate("+rotation+"deg)"
+       });
+   }
+
 const toggleButton=document.querySelector('.toggle-button')
 const navLinks = document.getElementsByClassName("navLink");
 const links = document.querySelectorAll('.navbarLink');
 const header = document.querySelector('.navbar')
+
 
 links.forEach((item) =>{
     item.addEventListener("click", ()=>{
@@ -14,16 +28,24 @@ links.forEach((item) =>{
     })
 })
 //////////
+
 $(document).ready(function(){
     $('.toggle-button').click(function(){
         $(".navLink").toggleClass("active");
     })
     $(".navbarItem").click(function () {
-      $(this).siblings().removeClass("active");
-      $(this).closes(".navbarItem").removeClass("active");
+       $(".navLink").removeClass("active");
     });
 })
-
+// $(document).ready(function(){
+//     $('..fas fa-bars bar').click(function(){
+//         $(this).toggleClass('fa-times');
+//         $('nav').toggleClass('active');
+//     });
+//  $("nav ul li a").click(function () {
+//    $(".fas fa-bars bar").removeClass("fa-times");
+//    $("nav").removeClass("active");
+//  });
 //toggleButton.addEventListener('click',()=> {
   //  navLinks.classList.toggle('active')
 //}) 
@@ -55,21 +77,21 @@ function activeLinkControl() {
         $(this).closes(".navbarItem").addClass('active');
     });
 }
-// //active navigation on scroll
-// for (const link of links) {
-//     link.addEventListener("click", clickHandler);
-//   }
+//active navigation on scroll
+for (const link of links) {
+    link.addEventListener("click", clickHandler);
+  }
 
-//   function clickHandler(e) {
-//     e.preventDefault();
-//     const href = this.getAttribute("data-link");
-//     const offsetTop = document.querySelector(data-link).offsetTop;
+  function clickHandler(e) {
+    e.preventDefault();
+    const href = this.getAttribute("data-link");
+    const offsetTop = document.querySelector(data-link).offsetTop;
 
-//     scroll({
-//       top: offsetTop,
-//       behavior: "smooth"
-//     });
-//   }
+    scroll({
+      top: offsetTop,
+      behavior: "smooth"
+    });
+  }
   //
 
     

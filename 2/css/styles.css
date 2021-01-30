@@ -1,305 +1,250 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: #faf9f5;
-    font-family: 'Questrial', sans-serif; 
-    padding: 1% 2% 2% 3%;
+body {
+  background-color: #faf9f5;
+  font-family: "Questrial", sans-serif;
+  padding: 1% 2% 2% 3%;
 }
 /*************home section start****************/
-#home{
-    height: auto;
-    letter-spacing: .2rem;
-    text-align: center;
-}
-#home h1{
-    margin-bottom: 1rem;
-    font-size: 3rem;
-}
- hr{
-    margin: auto;
-    width: 50%;
-}
-#home p{
-    margin: 1rem;
-    font-size: 1.5rem;
-    font-weight: 100;
-}
-img{
-    height: auto;
-    width: 100%;
 
+/* eye */
+.box {
+  padding: 4rem 0 0 0;
+  text-align: center;
 }
-.box{
-    padding: 4rem 0 0 0;
-    text-align: center;
+.box .eye {
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 2), inset 0 0 10px #faf9f5,
+    inset 0 0 15px #faf9f5;
+  display: inline-block;
+  height: 3rem;
+  margin: 0px 10px;
+  position: relative;
+  width: 3rem;
 }
-.box .eye{
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 2px 25px rgba(0,0, 0, 2),
-                inset 0 0 10px #faf9f5,
-                inset 0 0 15px #faf9f5;
-    display: inline-block;
-    height: 3rem;
-    margin: 0px 10px;
-    position: relative;
-    width: 3rem;
+.box .eye::before {
+  background-color: #000;
+  border-radius: 50%;
+  border: 5px solid #e6dcb8;
+  box-sizing: border-box;
+  content: "";
+  height: 1rem;
+  left: 35%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 1rem;
 }
-.box .eye::before{
-    background-color: #000;
-    border-radius: 50%;
-    border:5px solid  #e6dcb8;
-    box-sizing: border-box;
-    content: '';
-    height: 1rem;
-    left: 35%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    width: 1rem;
-  
-}
-/* .angle{
-    float: right;
-    margin: 1rem 3rem 0 3rem;
-    background-color: #000;
-    color: #fff;
-    transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    padding: 25px 40px 0 3rem;
-    
-} */
-span{
-    position: relative;
-    float: right;
-    margin: 1rem -2rem 0 ;
-    background-color: #000;
-    color: #fff;
-    transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    padding: 15.5px 39.4px ;
-}
-#home .fas{
+/* home */
 
-    animation: animate 1s linear infinite;
-    color: #fff;
+#home {
+  height: auto;
+  letter-spacing: 0.2rem;
+  text-align: center;
 }
-@keyframes animate{
-    0%
-    {
-        transform: translateY(-10px);
-    }
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+hr {
+  margin: auto;
+  width: 50%;
+}
+#home p {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 1rem;
+}
+img {
+  height: auto;
+  width: 100%;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(-10px);
+  }
 }
 /*************home section end****************/
 
-
 /****************Navigation Bar**********************/
-nav{
-    position: fixed;
-    top: 0;
-    right: 0;
-    text-align: center;
-    margin: 3.5rem 3rem;
-    background-color: black;
-    color: white;
-    font-size: 1.2rem;
-    border-radius: 1rem;
-    
-    
-    
+nav {
+  background-color: black;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  margin: 3.5rem 3rem;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
 }
 
-.nav-active {
-
-  }
 nav .navbarList {
-    list-style: none;
-    
+  list-style: none;
 }
-.navbarList:hover{
-    
+nav ul li {
+  margin: auto;
+  text-transform: capitalize;
+  width: 100%;
 }
-nav ul li{
-    margin: auto;
-   
-    text-transform: capitalize;
-    width: 100%;
+nav .navbarLink {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 20px 4px;
+  cursor: pointer;
 }
-nav .navbarLink{
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    padding: 20px 4px;
-    cursor: pointer;
+
+
+.toogle {
+  display: none;
 }
-nav li :{
-    
-}
-.toogle{
-    display: none;
-}
-.navbarLink.active{
-    background-color: #e6dcb8;
-    border-bottom: 2px solid  #fff;
-    color: black;
-    font-weight: 600;
+.navbarLink.active {
+  background-color: #e6dcb8;
+  border-bottom: 2px solid #fff;
+  color: black;
+  font-weight: 600;
 }
 /* profile */
-#profile{
-    margin: 5% auto;
-    text-align: center;
-    height: auto;
-    background-color: #fff;
-    border-radius:10px;
+#profile {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 5% auto;
+  height: auto;
+  text-align: center;
 }
-.profile-box{
-    padding:2% 11%;
+.profile-box {
+  padding: 2% 11%;
 }
-#profile h1{
-    letter-spacing: 1px;
-    font-size: 3.5rem;
-    font-family: 'Open Sans', sans-serif;
-    margin: 1rem auto;
+#profile h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.5rem;
+  margin: 1rem auto;
+  letter-spacing: 1px;
 }
-.paragraph{
-    font-size: 1.1rem;
-   
-    letter-spacing: 1px;
-    margin-bottom: 3rem;
+.paragraph {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
 }
-#profile hr{
-    width: 100%;
-    margin-bottom: 3rem;
+#profile hr {
+  margin-bottom: 3rem;
+  width: 100%;
 }
-#profile h3{
-    text-align: left;
+#profile h3 {
+  text-align: left;
 }
-.about-me{
-    text-align: left ;
-    
+.about-me {
+  text-align: left;
 }
-.content{
-    margin: 1rem 0 ;
-    line-height: 1.7rem;
-    width: 88%;
+.content {
+  line-height: 1.7rem;
+  margin: 1rem 0;
+  width: 88%;
 }
-.rana-img{
-    text-align: center;
-    border-radius: 7.8rem;
-    border: 1rem solid #e6dcb8;
+.rana-img {
+  border: 1rem solid #e6dcb8;
+  border-radius: 7.8rem;
+  text-align: center;
 }
-.details{
-    text-align: left ;
-    padding: 0 2rem;
+.details {
+  padding: 0 2rem;
+  text-align: left;
 }
-.details h5{
-    margin: 1rem auto 0;
-    font-weight: 600;
+.details h5 {
+  font-weight: 600;
+  margin: 1rem auto 0;
 }
 
-@media (max-width: 910px){
-    nav{
-     justify-content: space-between;
-    align-items: center;
+@media (max-width: 910px) {
+  nav {
     background-color: black;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    margin:0 0rem 2rem 0rem;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 3rem 0 0 ;
     border-radius: 0;
+    color: white;
+    margin: 0 0rem 2rem 0rem;
+    padding: 3rem 0 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 1s;
+    width: 100%;
     z-index: 99;
-      transition: all 1s;
-   } 
- .navbarList{
-    text-align: center !important;
-     align-items: center !important;
-    margin: 0px;
-    padding:0rem 0rem;
-    width: 100%;
+  }
+  .navbarList {
     flex-direction: column;
-    display: flex;
-     
-}
-.navbarItem{
-    list-style: none;
-    text-align: center;
-    align-items: center;
-    padding: 0  8px;
-}
-.navbarItem:hover{
-    background-color: #e6dcb8;
     width: 100%;
-}
-.navLink{
+  }
+  .navbarItem {
+    padding: 0 8px;
+  }
+  .navbarItem:hover {
+    background-color: #e6dcb8;
+  }
+  .navLink {
     display: none;
-}
-.navbarLink{
-        text-decoration: none;
-        color: white;
-        display: block;
-        font-size: 20px;
-        text-align: center;
-        padding: .5rem 1rem;
-}
-.navbarLink:hover{
+  }
+  /*****************/
+  .navbarLink {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+  .navbarLink:hover {
     color: #000;
-}
-.toogle{
+  }
+  .toogle {
     display: flex;
-}
-.toggle-button{
+  }
+  .toggle-button {
     position: absolute;
-    top: .5rem;
-    right: 1rem;;
+    top: 0.5rem;
+    right: 1rem;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
     height: 0;
     align-items: center;
-}
-.toggle-button .bar{
+    cursor: pointer;
+  }
+  .toggle-button .bar {
     color: #fff;
     font-size: 2rem;
     top: 0;
     text-align: center;
-   
-} 
-.toggle-button:hover{
+  }
+  .toggle-button:hover {
     text-decoration: none;
     list-style: none;
-}
-.navLink.active{
-        display: flex;
-          transition: all 1s ease-out;
-    }
+  }
+  .navLink.active {
+    display: flex;
+    transition: all 1s ease-out;
+  }
 
-  .navbarItem{
-        text-align: center;
-    }
+  .navbarItem {
+    text-align: center;
+  }
 
-
-
-.about-me h3{
+  .about-me h3 {
     text-align: center !important;
-}
-.content{
+  }
+  .content {
     text-align: center !important;
     width: 100%;
-}
-.details{
+  }
+  .details {
     text-align: center;
     margin-bottom: 1rem;
-}
-.details h3{
+  }
+  .details h3 {
     margin-top: 2rem;
     text-align: center !important;
-}
+  }
 }
