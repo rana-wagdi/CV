@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #faf9f5;
+  font-family: "Questrial", sans-serif;
+  padding: 1% 2% 2% 3%;
+}
+/*************home section start****************/
+
+/* eye */
+.box {
+  padding: 4rem 0 0 0;
+  text-align: center;
+}
+.box .eye {
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 2), inset 0 0 10px #faf9f5,
+    inset 0 0 15px #faf9f5;
+  display: inline-block;
+  height: 3rem;
+  margin: 0px 10px;
+  position: relative;
+  width: 3rem;
+}
+.box .eye::before {
+  background-color: #000;
+  border-radius: 50%;
+  border: 5px solid #e6dcb8;
+  box-sizing: border-box;
+  content: "";
+  height: 1rem;
+  left: 35%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 1rem;
+}
+/* home */
+
+#home {
+  height: auto;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+hr {
+  margin: auto;
+  width: 50%;
+}
+#home p {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 1rem;
+}
+img {
+  height: auto;
+  width: 100%;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(-10px);
+  }
+}
+/*************home section end****************/
+
+/****************Navigation Bar**********************/
+nav {
+  background-color: black;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  margin: 3.5rem 3rem;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+nav .navbarList {
+  list-style: none;
+}
+nav ul li {
+  margin: auto;
+  text-transform: capitalize;
+  width: 100%;
+}
+nav .navbarLink {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 20px 4px;
+  cursor: pointer;
+}
+
+
+.toogle {
+  display: none;
+}
+.navbarLink.active {
+  background-color: #e6dcb8;
+  border-bottom: 2px solid #fff;
+  color: black;
+  font-weight: 600;
+}
+/* profile */
+#profile {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 5% auto;
+  height: auto;
+  text-align: center;
+}
+.profile-box {
+  padding: 2% 11%;
+}
+#profile h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.5rem;
+  margin: 1rem auto;
+  letter-spacing: 1px;
+}
+.paragraph {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+}
+#profile hr {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+#profile h3 {
+  text-align: left;
+}
+.about-me {
+  text-align: left;
+}
+.content {
+  line-height: 1.7rem;
+  margin: 1rem 0;
+  width: 88%;
+}
+.rana-img {
+  border: 1rem solid #e6dcb8;
+  border-radius: 7.8rem;
+  text-align: center;
+}
+.details {
+  padding: 0 2rem;
+  text-align: left;
+}
+.details h5 {
+  font-weight: 600;
+  margin: 1rem auto 0;
+}
+
+@media (max-width: 910px) {
+  nav {
+    background-color: black;
+    border-radius: 0;
+    color: white;
+    margin: 0 0rem 2rem 0rem;
+    padding: 3rem 0 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: all 1s;
+    width: 100%;
+    z-index: 99;
+  }
+  .navbarList {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbarItem {
+    padding: 0 8px;
+  }
+  .navbarItem:hover {
+    background-color: #e6dcb8;
+  }
+  .navLink {
+    display: none;
+  }
+  /*****************/
+  .navbarLink {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+  .navbarLink:hover {
+    color: #000;
+  }
+  .toogle {
+    display: flex;
+  }
+  .toggle-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 0;
+    align-items: center;
+    cursor: pointer;
+  }
+  .toggle-button .bar {
+    color: #fff;
+    font-size: 2rem;
+    top: 0;
+    text-align: center;
+  }
+  .toggle-button:hover {
+    text-decoration: none;
+    list-style: none;
+  }
+  .navLink.active {
+    display: flex;
+    transition: all 1s ease-out;
+  }
+
+  .navbarItem {
+    text-align: center;
+  }
+
+  .about-me h3 {
+    text-align: center !important;
+  }
+  .content {
+    text-align: center !important;
+    width: 100%;
+  }
+  .details {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .details h3 {
+    margin-top: 2rem;
+    text-align: center !important;
+  }
+}
