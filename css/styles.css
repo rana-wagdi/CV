@@ -47,7 +47,7 @@ body {
   text-align: center;
 }
 #home h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 hr {
@@ -55,7 +55,7 @@ hr {
   width: 50%;
 }
 #home p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 100;
   margin: 1rem;
 }
@@ -75,7 +75,7 @@ nav {
   background-color: black;
   border-radius: 1rem;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 3.5rem 3rem;
   position: fixed;
   right: 0;
@@ -118,44 +118,52 @@ nav .navbarLink {
   text-align: center;
 }
 .profile-box {
-  padding: 2% 11%;
+  padding: 2% 13%;
 }
 #profile h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin: 1rem auto;
   letter-spacing: 1px;
 }
 .paragraph {
-  font-size: 1.1rem;
+  font-size: 1rem;
   letter-spacing: 1px;
   margin-bottom: 3rem;
 }
 #profile hr {
   margin-bottom: 3rem;
-  width: 100%;
+  width: 80%;
 }
 #profile h3 {
+  
   text-align: left;
 }
 .about-me {
   text-align: left;
 }
+.about-me h3{
+  margin:1rem ;
+}
 .content {
+  font-size: .9rem;
   line-height: 1.7rem;
-  margin: 1rem 0;
+  margin: 1rem ;
   width: 88%;
 }
 .rana-img {
   border: 1rem solid #e6dcb8;
-  border-radius: 7.8rem;
+  border-radius: 8.1rem;
   text-align: center;
 }
 .details {
+  font-size: .9rem;
+  margin: 1rem auto;
   padding: 0 2rem;
   text-align: left;
 }
 .details h5 {
+  font-size: .9rem;
   font-weight: 600;
   margin: 1rem auto 0;
 }
@@ -165,7 +173,7 @@ nav .navbarLink {
     background-color: black;
     border-radius: 0;
     color: white;
-    margin: 0 0rem 2rem 0rem;
+    margin: 0;
     padding: 3rem 0 0;
     position: fixed;
     right: 0;
@@ -178,9 +186,6 @@ nav .navbarLink {
     flex-direction: column;
     width: 100%;
   }
-  .navbarItem {
-    padding: 0 8px;
-  }
   .navbarItem:hover {
     background-color: #e6dcb8;
   }
@@ -189,12 +194,8 @@ nav .navbarLink {
   }
   /*****************/
   .navbarLink {
-    text-decoration: none;
-    color: white;
-    display: block;
-    font-size: 20px;
-    text-align: center;
-    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    padding: .5rem 0 !important;
   }
   .navbarLink:hover {
     color: #000;
@@ -203,29 +204,19 @@ nav .navbarLink {
     display: flex;
   }
   .toggle-button {
-    position: absolute;
-    top: 0.5rem;
-    right: 1rem;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 0;
-    align-items: center;
     cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    width: 30px;
   }
   .toggle-button .bar {
     color: #fff;
     font-size: 2rem;
-    top: 0;
-    text-align: center;
-  }
-  .toggle-button:hover {
-    text-decoration: none;
-    list-style: none;
   }
   .navLink.active {
     display: flex;
-    transition: all 1s ease-out;
+    transition: all .5s ease-out;
   }
 
   .navbarItem {
