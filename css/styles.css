@@ -143,7 +143,7 @@ nav .navbarLink {
   text-align: left;
 }
 .about-me h3{
-  margin:1rem auto;
+  margin:1rem 1rem 0;
 }
 .content {
   font-size: .9rem;
@@ -194,6 +194,13 @@ nav .navbarLink {
 }
 .education{
   text-align: left;
+}
+.education h4{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.education p{
+  font-size: .8rem;
 }
 
 @media (max-width: 910px) {
