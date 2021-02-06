@@ -168,6 +168,31 @@ nav .navbarLink {
   margin: 1rem auto 0;
 }
 
+
+/*experiences*/
+
+#experiences{
+  padding: 2% 13%;
+  text-align: center;
+  
+}
+#experiences h1{
+  font-size: 3rem;
+  margin: 1.5rem;
+}
+#experiences p{
+  letter-spacing: .1rem;
+  line-height: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+#experiences hr{
+  width: 100%;
+}
+.education h3{
+  margin: 3rem;
+  text-align: left;
+}
+
 @media (max-width: 910px) {
   nav {
     background-color: black;
