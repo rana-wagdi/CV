@@ -143,12 +143,12 @@ nav .navbarLink {
   text-align: left;
 }
 .about-me h3{
-  margin:1rem ;
+  margin:1rem auto;
 }
 .content {
   font-size: .9rem;
   line-height: 1.7rem;
-  margin: 1rem ;
+  margin: 1rem auto;
   width: 88%;
 }
 .rana-img {
@@ -178,7 +178,7 @@ nav .navbarLink {
 }
 #experiences h1{
   font-size: 3rem;
-  margin: 1.5rem;
+  margin: 1.5rem auto;
 }
 #experiences p{
   letter-spacing: .1rem;
@@ -188,8 +188,11 @@ nav .navbarLink {
 #experiences hr{
   width: 100%;
 }
-.education h3{
-  margin: 3rem;
+#experiences  h3{
+  margin: 3rem auto;
+  text-align: left;
+}
+.education{
   text-align: left;
 }
 
