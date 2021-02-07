@@ -202,7 +202,9 @@ nav .navbarLink {
 .education p{
   font-size: .8rem;
 }
-
+.location{
+  color: #229c0c;
+}
 @media (max-width: 910px) {
   nav {
     background-color: black;
