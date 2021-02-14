@@ -305,30 +305,26 @@ nav .navbarLink {
   .education p{
   width: 100%;
  
-}
+  }
 }
 @media (max-width: 745px){
   #experiences{
-  padding:0;
-  text-align: center;
-  
-}
+  padding:0;  
+  }
   .education-box{
     margin: 3rem 0;
   }
-  p .text{
-    display: none !important;
-  }
   .education p {
-    margin: 0  !important;
+    margin: .5rem 0  !important;
   }
+  p .text{
+    display: none ;
+  }
+
   .location i{
- margin-top: 0;
-}
-p strong{
-  margin-top: .3rem ;
-}
+     margin-top: 0;
+  }
 .seperator{
   display: none;
-}
+  }
 }
