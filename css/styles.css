@@ -143,23 +143,26 @@ nav .navbarLink {
   text-align: left;
 }
 .about-me h3{
-  margin:1rem 1rem 0;
+  margin:1rem 0;
 }
 .content {
   font-size: .9rem;
   line-height: 1.7rem;
-  margin: 1rem auto;
-  width: 88%;
+  margin: 1rem 0;
+  width: 100%;
 }
 .rana-img {
   border: 1rem solid #e6dcb8;
   border-radius: 8.1rem;
+  height: 250px;
+  margin-top: .5rem;
   text-align: center;
+  width: 250px;
 }
 .details {
   font-size: .9rem;
-  margin: 1rem auto;
-  padding: 0 2rem;
+  margin: 1rem 0;
+  
   text-align: left;
 }
 .details h5 {
@@ -201,9 +204,32 @@ nav .navbarLink {
 }
 .education p{
   font-size: .8rem;
+  width: 90%;
+}
+.education p strong{
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .1rem ;
 }
 .location{
   color: #229c0c;
+ 
+}
+.location i{
+  margin-top: .7rem;
+}
+.link-icon{
+  padding: .3rem;
+}
+.link-icon a{
+  color: #229c0c;
+}
+@media (max-width: 1200px){
+  .rana-img {
+    height: 200px;
+    width: 200px;
+  }
 }
 @media (max-width: 910px) {
   nav {
@@ -253,8 +279,9 @@ nav .navbarLink {
   }
   .navLink.active {
     display: flex;
-    transition: all .5s ease-out;
+  
   }
+
 
   .navbarItem {
     text-align: center;

@@ -32,6 +32,7 @@ links.forEach((item) =>{
 $(document).ready(function(){
     $('.toggle-button').click(function(){
         $(".navLink").toggleClass("active");
+        
     })
     $(".navbarItem").click(function () {
        $(".navLink").removeClass("active");
@@ -85,7 +86,7 @@ for (const link of links) {
   function clickHandler(e) {
     e.preventDefault();
     const href = this.getAttribute("data-link");
-    const offsetTop = document.querySelector(data-link).offsetTop;
+    const offsetTop = document.querySelector("data-link").offsetTop;
 
     scroll({
       top: offsetTop,
