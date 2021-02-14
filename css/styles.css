@@ -302,4 +302,33 @@ nav .navbarLink {
     margin-top: 2rem;
     text-align: center !important;
   }
+  .education p{
+  width: 100%;
+ 
+}
+}
+@media (max-width: 745px){
+  #experiences{
+  padding:0;
+  text-align: center;
+  
+}
+  .education-box{
+    margin: 3rem 0;
+  }
+  p .text{
+    display: none !important;
+  }
+  .education p {
+    margin: 0  !important;
+  }
+  .location i{
+ margin-top: 0;
+}
+p strong{
+  margin-bottom: 0 ;
+}
+.seperator{
+  display: none;
+}
 }
