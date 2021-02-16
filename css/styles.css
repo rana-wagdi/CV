@@ -264,7 +264,7 @@ nav .navbarLink {
 }
 li{
   list-style: none;
-  margin: .8rem 0;
+  margin: .8rem 0 0;
 }
 .star-position{
   float: right;
