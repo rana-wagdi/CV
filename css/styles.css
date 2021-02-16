@@ -205,6 +205,7 @@ nav .navbarLink {
 .education p{
   font-size: .8rem;
   width: 90%;
+
 }
 .education p strong{
   display: block;
@@ -224,6 +225,52 @@ nav .navbarLink {
 }
 .link-icon a{
   color: #229c0c;
+}
+
+/* abilites start */
+#abilities {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 5% auto;
+  height: auto;
+  text-align: center;
+}
+.abilites-box {
+  padding: 2% 13%;
+}
+#abilities h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  margin: 1rem auto;
+  letter-spacing: 1px;
+}
+.abilites-p{
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+
+}
+.abilities-line{
+  margin-bottom: 3rem;
+  width: 100%;
+}
+#abilities h2{
+  text-align: left ;
+}
+.skills{
+  margin: 3rem 0;
+  text-align: left;
+}
+li{
+  list-style: none;
+  margin: .8rem 0;
+}
+.star-position{
+  float: right;
+}
+.star{
+  color:#a18a3a;
 }
 @media (max-width: 1200px){
   .rana-img {
