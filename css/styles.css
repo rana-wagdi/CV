@@ -282,9 +282,20 @@ li{
 /* -webkit-font-smoothing: antialiased  */
 .abilites-title{
     display: inline-block;
+    margin-right:  1rem ;
     width: 60%;
-    padding: 0 ;
-    margin: 0 1rem 0 0 ;
+  }
+  .button-github{
+    background-color: #a18a3a;
+    border-color: #a18a3a;
+    border-radius: .3rem;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    padding: .3rem;
+  }
+  .button-github:hover{
+     background-color: #5c5023;
   }
 @media (max-width: 1200px){
   .rana-img {
