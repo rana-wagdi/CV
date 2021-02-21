@@ -231,7 +231,7 @@ nav .navbarLink {
 #abilities {
   background-color: #fff;
   border-radius: 10px;
-  margin: 5% auto;
+  margin: 5% 0;
   height: auto;
   text-align: center;
 }
@@ -271,10 +271,21 @@ li{
 }
 .star-position{
   float: right;
+  
+  
 }
 .star{
   color:#a18a3a;
+  font-size: 1rem;
+  
 }
+/* -webkit-font-smoothing: antialiased  */
+.abilites-title{
+    display: inline-block;
+    width: 60%;
+    padding: 0 ;
+    margin: 0 1rem 0 0 ;
+  }
 @media (max-width: 1200px){
   .rana-img {
     height: 200px;
@@ -356,6 +367,7 @@ li{
   width: 100%;
  
   }
+
 }
 @media (max-width: 745px){
   #experiences{
@@ -377,4 +389,16 @@ li{
 .seperator{
   display: none;
   }
+  .abilites-box{
+    padding: 0 !important;
+  }
+  .abilites-title{
+    width: 40%;
+  }
+  .star-position{
+  float: right;
+  padding: 0 !important ;
+  right: 0 !important;
+  
+}
 }
