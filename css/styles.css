@@ -297,6 +297,72 @@ li{
   .button-github:hover{
      background-color: #5c5023;
   }
+  /* prject */
+
+  #projects{
+    text-align: center;
+  }
+  #projects h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  margin: 1rem auto;
+  letter-spacing: 1px;
+}
+#projects p{
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+
+}
+/* contac */
+#contact{
+  background-color: #4f4d4d;
+  border-radius: 1rem;
+  color: #fff;
+  padding: 3% 10% ;
+  height: auto;
+  text-align: center;
+}
+.contact-line{
+  margin: 4rem auto;
+}
+#contact h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  margin: 1rem auto;
+  letter-spacing: 1px;
+}
+#contact p{
+  color: #807e7e;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+
+}
+.contact-box{
+  text-align: left;
+  padding: 3%;
+  width: 100%;
+  
+  
+}
+ span a{
+  color:#807e7e;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  margin: 0rem 0 !important;
+}
+.social-icon{
+  color: #807e7e;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+.social :hover{
+  color:#fff;
+}
 @media (max-width: 1200px){
   .rana-img {
     height: 200px;
@@ -412,4 +478,10 @@ li{
   right: 0 !important;
   
 }
+.contact-box{
+  text-align: left;
+  padding: 0 !important;
+  width: 100%;
+  
+  
 }
