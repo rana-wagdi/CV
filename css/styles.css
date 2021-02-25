@@ -297,6 +297,9 @@ li{
   .button-github:hover{
      background-color: #5c5023;
   }
+  .star-gray{
+    color: #dbdad7;
+  }
   /* prject */
 
   #projects{
@@ -343,21 +346,28 @@ li{
 }
 .contact-box{
   text-align: left;
-  padding: 3%;
+  
   width: 100%;
   
   
 }
- span a{
+.social{
+  margin: 4rem 0;
+}
+ .social-contact{
   color:#807e7e;
   font-size: 1.2rem;
-  line-height: 3rem;
-  margin: 0rem 0 !important;
+  line-height: 1rem;
+
 }
 .social-icon{
-  color: #807e7e;
-  font-size: 2rem;
-  margin: 0 1rem;
+  color: #918787;
+  font-size: 1.8rem;
+  float: left;
+  height: 2rem;
+  margin-right: 1rem;
+  width: 2rem;
+
 }
 
 .social :hover{
@@ -480,8 +490,12 @@ li{
 }
 .contact-box{
   text-align: left;
-  padding: 0 !important;
-  width: 100%;
-  
-  
+ width: 80%;
+}
+.span a{
+  color:#807e7e;
+  font-size: .8rem;
+  line-height: 2rem;
+
+}
 }
