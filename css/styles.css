@@ -378,9 +378,12 @@ li{
 #projects{
 overflow: hidden;
 }
+#projects .projects-box{
+   padding: 2% 13%;
+}
 
 #projects img {
-  width:350px;
+  width:450px;
    height:350px;
    object-fit:cover;
    object-position:100% ;
