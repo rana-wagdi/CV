@@ -59,7 +59,7 @@ hr {
   font-weight: 100;
   margin: 1rem;
 }
-img {
+#home img {
   height: auto;
   width: 100%;
 }
@@ -374,6 +374,21 @@ li{
 .social :hover{
   color:#fff;
 }
+
+#projects{
+overflow: hidden;
+}
+
+#projects img {
+  width:350px;
+   height:350px;
+   object-fit:cover;
+   object-position:100% ;
+   overflow: hidden;
+   margin: 50px 0;
+   border-radius: 10px;
+}
+
 @media (max-width: 1200px){
   .rana-img {
     height: 200px;
