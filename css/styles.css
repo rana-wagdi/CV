@@ -433,28 +433,37 @@ overflow: hidden;
 }
 .social{
   display: inline-block;
-  margin: 4rem 0;
+  margin:  0;
+
+}
+.social:hover{
+  color: #fff;
 }
  .social-contact{
+  
   color:#807e7e;
   font-size: 1.2rem;
   line-height: 1rem;
 
 }
-.social-icon{
+.social-contact:hover{
+  text-decoration: none;
+  color: #fff;
+}
+/* .contact-box i{
   color: #918787;
   font-size: 1.8rem;
   
   height: 2rem;
   
-  margin: auto !important;
+  margin: 0 4px;
   width: 2rem;
 
 }
+.contact-box i:hover{
+  color: #000;
+} */
 
-.social :hover{
-  color:#fff;
-}
 
 
 @media (max-width: 1200px){
