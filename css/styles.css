@@ -318,62 +318,6 @@ li{
   margin-bottom: 3rem;
 
 }
-/* contac */
-#contact{
-  background-color: #4f4d4d;
-  border-radius: 1rem;
-  color: #fff;
-  padding: 3% 10% ;
-  height: auto;
-  text-align: center;
-}
-.contact-line{
-  margin: 4rem auto;
-}
-#contact h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 3rem;
-  margin: 1rem auto;
-  letter-spacing: 1px;
-}
-#contact p{
-  color: #807e7e;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  line-height: 2rem;
-  margin-bottom: 3rem;
-
-}
-.contact-box{
-  text-align: center;
-  
-  width: 100%;
-  
-  
-}
-.social{
-  margin: 4rem 0;
-}
- .social-contact{
-  color:#807e7e;
-  font-size: 1.2rem;
-  line-height: 1rem;
-
-}
-.social-icon{
-  color: #918787;
-  font-size: 1.8rem;
-  
-  height: 2rem;
-  
-  margin: auto !important;
-  width: 2rem;
-
-}
-
-.social :hover{
-  color:#fff;
-}
 
 #projects{
 overflow: hidden;
@@ -385,6 +329,13 @@ overflow: hidden;
 }
 .project-img{
   text-align: center;
+}
+.project-img a{
+  text-decoration: none;
+  color: #000;
+}
+.img-box{
+  margin: 10px 0px;
 }
  .wrapper{
     display: flex;
@@ -430,6 +381,7 @@ overflow: hidden;
 }
 .info{
     position: relative;
+
     z-index: 3;
     color: #000;
     transition: transform .2s;
@@ -446,6 +398,63 @@ overflow: hidden;
 }
 
 
+/* contac */
+#contact{
+  background-color: #4f4d4d;
+  border-radius: 1rem;
+  color: #fff;
+  padding: 3% 10% ;
+  height: auto;
+  text-align: center;
+}
+.contact-line{
+  margin: 4rem auto;
+}
+#contact h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  margin: 1rem auto;
+  letter-spacing: 1px;
+}
+#contact p{
+  color: #807e7e;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+
+}
+.contact-box{
+  text-align: center;
+  
+  width: 100%;
+  
+  
+}
+.social{
+  display: inline-block;
+  margin: 4rem 0;
+}
+ .social-contact{
+  color:#807e7e;
+  font-size: 1.2rem;
+  line-height: 1rem;
+
+}
+.social-icon{
+  color: #918787;
+  font-size: 1.8rem;
+  
+  height: 2rem;
+  
+  margin: auto !important;
+  width: 2rem;
+
+}
+
+.social :hover{
+  color:#fff;
+}
 
 
 @media (max-width: 1200px){
