@@ -581,9 +581,16 @@ overflow: hidden;
   right: 0 !important;
   
 }
+#contact{
+  padding: 3% ;
+}
+
 .contact-box{
   text-align: left;
- width: 80%;
+ width: 100%;
+}
+.social{
+  width: 40%;
 }
 .span a{
   color:#807e7e;
