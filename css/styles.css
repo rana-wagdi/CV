@@ -383,21 +383,68 @@ overflow: hidden;
    text-align: center;
    align-items: center;
 }
+.project-img{
+  text-align: center;
+}
+ .wrapper{
+    display: flex;
+    width: 100%;
+    margin: 4rem 0rem;
+    transform: all .5s;
+    text-decoration: none;
+}
 
+.project-img:before {
+  content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 94%;
+    height: 100%;
+    background: linear-gradient(0deg,rgb(230, 220, 200, 1),rgba(230, 220, 184, 1));;;
+    z-index: 2;
+    transition: .5 all;
+    opacity: 0;
+    border-radius: 1rem;
+}
+.project-img:hover:before{
+    opacity: 1;
+}
 #projects img {
-  width:400px;
-   height:350px;
-   object-fit:cover;
-   object-position:100% ;
-   overflow: hidden;
-   margin: 50px 10px;
-   border-radius: 10px;
-   transition: .5s ease-in-out;
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 1rem;
+    margin: 0px 10px !important;
+}
+.project-line{
+  width: 90%;
+  margin: 8px 0;
   
+
 }
-#projects img:hover{
-   transform: translateY(.5rem);
+.info{
+    position: relative;
+    z-index: 3;
+    color: #000;
+    transition: transform .2s;
+    opacity: 0;
+    margin-top: 1.7rem;
+    text-align: center;
+    left: 0;
+    cursor: pointer;
 }
+.project-img:hover .info{
+    opacity:1;
+    text-align: left;
+    transform: translateX(-2%);
+}
+
 
 
 
